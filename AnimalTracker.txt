@@ -15,3 +15,7 @@ Cats
 Wild Cats
 - Caracal
 - Ocelot
+
+Domestic Cats
+- Russian Blue
+- Toyger
