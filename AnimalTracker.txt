@@ -11,6 +11,15 @@ Domestic Dogs
 - Labrador
 - Husky
 
+Cats
+Wild Cats
+- Caracal
+- Ocelot
+
+Domestic Cats
+- Russian Blue
+- Toyger
+
 Cows
 - Highland Cattle
 - Belted Galloway
