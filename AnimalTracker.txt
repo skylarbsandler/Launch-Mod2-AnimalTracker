@@ -10,3 +10,7 @@ Domestic Dogs
 - Golden Retriever
 - Labrador
 - Husky
+
+Cows
+- Highland Cattle
+- Belted Galloway
