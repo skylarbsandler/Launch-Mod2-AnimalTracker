@@ -10,3 +10,8 @@ Domestic Dogs
 - Golden Retriever
 - Labrador
 - Husky
+
+Cats
+Wild Cats
+- Caracal
+- Ocelot
