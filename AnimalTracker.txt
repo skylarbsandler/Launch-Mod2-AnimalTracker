@@ -5,3 +5,8 @@ Wild Dogs
 - Coyote
 - Pampas Fox
 - Arctic Fox
+
+Domestic Dogs
+- Golden Retriever
+- Labrador
+- Husky
