@@ -1,4 +1,4 @@
-# Mod2 Week2 Assessment - <YOUR NAME HERE>
+# Mod2 Week2 Assessment - Skylar Sandler
 
 ## Setup
 1. Fork this repository.
@@ -12,10 +12,18 @@
 **Important** Answer these questions in this file on your `main` branch.  When finished with the questions, commit and push your main branch.  You do not need to create a pull request yet!
 
 1. What does TDD stand for?
+Test Driven Development requires us to first write our tests before writing our code. The tests drive how we design our code.
 
 1. What are three benefits of using TDD?
+- Integrates writing tests into our coding process rather than it feels like an optional step tacked onto to the end of the coding process.
+- Focuses us to think about how we want to structure and design our code early
+- Breaks down problems into smaller problems by making decisions early
+- Only write the code you need by focusing our code to pass our prewritten tests and confirm when we have successfully solved the problem at hand.
 
 1. Imagine you are in an interview.  The interviewer asks: How do you use TDD? How would you answer?
+Test Driven Development leads to testing being an integral step in our coding process. It forces the ocder to critically think about what code is necessary to solve the problem and make
+decisions early about how we go about solving the problem. These tests can then serve as a roadmap when we proceed to writing our main code and help confirm we have successfully solved the
+problem by passing our prewritten tests.
 
 1. For the class below, outline the tests you would need.  Try to use as much C# syntax as possible. The first test has been provided for you. (this question is worth 4 points)
 ```c#
@@ -58,13 +66,43 @@ public void DogHasNameAttribute()
 
     Assert.Equal("Nile", dog.Name);
 }
+
+[Fact]
+public void Dod_Eat_CorrectlyChangesIsHungrytoFalse()
+{
+    Dog dog = new Dog("Nile", "Golden Retriever");
+    dog.Eat();
+    Assert.False(dog.IsHungry);
+
+[Fact]
+public void Dog_Sleep_CorrectlyChangesISHungrytoTrue()
+{
+    Dog dog = new Dog("Nile", "Golden Retriever");
+    dog.Sleep();
+    Assert.True(dog.IsHungry);
+}
+
+[Fact]
+public void Dog_Speak_CorrectlyReturnsString()
+{
+    Dog dog = new Dog("Nile", "Golden Retriever");
+    Assert.Equal("Bark Bark!", dog.Speak());
+}
 ```
 
 5. What is a merge conflict, and when might you encounter one?
+A merge conflict occurs when you are trying to merge (or combine) different branches of the same prioject. The different branches have code on the same lines so Github or VS does not know
+which version of the code to accept into the main file. When a merge conflict occurs, you need to manually decide and update the code to let GH/VS know what you want the main branch to look like.
+This often happens when multiple developers are working on branches of the same project and updating the same files then try to combine their conflicting code.
 
-1. You and a partner are working on a project together.  Your partner is working on aa-branch; you are working on bb-branch.  In as much detail as possible, describe how you both would get your work combined onto the main branch.
+6. You and a partner are working on a project together.  Your partner is working on aa-branch; you are working on bb-branch.  In as much detail as possible, describe how you both would get your work combined onto the main branch.
+Both partners would need to:
+- Committ and pish their respective branches to Github.
+- Create seperate pull requests to merge their respective branches into the main branch.
+- One, or both, partners are likely to receive a merge conflict if their added/updated code on the same lines in the same file. Those merge conflicts need to be resolved.
+- Each partner would then review and comment their partner's PR to approve and complete the merges into the main branch.
 
-1. Why is it good practice to have someone else approve and/or merge your PR?  
+7. Why is it good practice to have someone else approve and/or merge your PR?  
   
 **Before moving on to the next section, commit your work and push your main branch!**
   
